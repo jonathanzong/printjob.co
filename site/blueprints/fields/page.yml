@@ -1,0 +1,101 @@
+type: group
+fields:
+  page:
+    label: Page Styles
+    type: headline
+    numbered: false
+  background:
+    label: Background Color
+    type:  text
+    required: true
+    placeholder: "e.g. #ff00ee"
+  css:
+    label: Arbitrary CSS
+    type:  textarea
+    help: "Will be wrapped in a &lt;style> tag"
+  big_panel:
+    label: Big Panel
+    type: headline
+    numbered: false
+  big_panel_type:
+    label: Panel Type
+    type: select
+    required: true
+    options:
+      text: Text
+      image: Image
+  big_panel_text:
+    label: Text
+    type:  textarea
+    help: "Shown when Panel Type is set to Text"
+  big_panel_images:
+    label: Images
+    type: structure
+    help: "Shown when Panel Type is set to Image"
+    fields:
+      big_panel_image:
+        label: Image
+        type: image
+        required: true
+      big_panel_image_label:
+        label: Image Label
+        type: text
+      big_panel_image_label:
+        label: Image Label
+        type: text
+      big_panel_image_fit:
+        label: Image Object Fit
+        type: select
+        default: cover
+        options:
+          cover: cover
+          contain: contain
+          none: none
+          scale_down: scale-down
+      big_panel_image_position:
+        label: Image Object Position
+        type: text
+        placeholder: "e.g. 50% 50%"
+  small_panel:
+    label: Small Panel
+    type: headline
+    numbered: false
+  small_panel_type:
+    label: Panel Type
+    type: select
+    required: true
+    options:
+      text: Text
+      image: Image
+  small_panel_text:
+    label: Text
+    type:  textarea
+    help: "Shown when Panel Type is set to Text"
+  small_panel_images:
+    label: Images
+    type: structure
+    help: "Shown when Panel Type is set to Image"
+    fields:
+      small_panel_image:
+        label: Image
+        type: image
+        required: true
+      small_panel_image_label:
+        label: Image Label
+        type: text
+      small_panel_image_label:
+        label: Image Label
+        type: text
+      small_panel_image_fit:
+        label: Image Object Fit
+        type: select
+        default: cover
+        options:
+          cover: cover
+          contain: contain
+          none: none
+          scale_down: scale-down
+      small_panel_image_position:
+        label: Image Object Position
+        type: text
+        placeholder: "e.g. 50% 50%"
